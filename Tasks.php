@@ -13,7 +13,7 @@ class Tasks {
         }
     }
 
-    // Kezelések listázása
+
     function getAppointments() {
         $sql = "SELECT * FROM appointments";
         $result = $this->conn->query($sql);
@@ -24,7 +24,7 @@ class Tasks {
         return $appointments;
     }
 
-    // Kezelés hozzáadása
+
     function addAppointment($animal_name, $breed, $birth_date, $owner_name, $owner_phone, $doctor_name, $specialty, $treatment_type, $treatment_date, $notes) {
         $sql = "INSERT INTO appointments (animal_name, breed, birth_date, owner_name, owner_phone, doctor_name, specialty, treatment_type, treatment_date, notes) 
                 VALUES ('$animal_name', '$breed', '$birth_date', '$owner_name', '$owner_phone', '$doctor_name', '$specialty', '$treatment_type', '$treatment_date', '$notes')";
