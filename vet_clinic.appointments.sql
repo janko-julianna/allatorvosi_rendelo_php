@@ -1,5 +1,5 @@
 ﻿CREATE TABLE vet_clinic.appointments (
-  id INT(11) NOT NULL,
+  id INT(11) NOT NULL AUTO_INCREMENT,
   pet_name VARCHAR(255) DEFAULT NULL,
   owner_name VARCHAR(255) DEFAULT NULL,
   appointment_date DATE DEFAULT NULL,

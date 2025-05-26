@@ -12,7 +12,6 @@
         include_once "Appointments.php";
         $appointmentsModel = new Appointments("localhost", "root", "", "vet_clinic");
         $action = $_GET['action'] ?? 'list';
-
         switch ($action) {
             case 'list':
                 include_once "appointment_list.php";
@@ -26,7 +25,8 @@
                 $appointment_date = htmlspecialchars($_POST['appointment_date']);
                 $appointment_time = htmlspecialchars($_POST['appointment_time']);
                 $appointmentsModel->addAppointment($pet_name, $owner_name, $appointment_date, $appointment_time);
+                break;
+        }
                
-::contentReference[oaicite:40]{index=40}
  
 
